@@ -2,11 +2,20 @@
 <html>
   <head>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
-    <h1>Blog: Rosemary</h1>
-    <section id="header"> </section>
-    
+    <header>  
+        <h1>Blog: Rosemary</h1>
+        <section id="header"> </section>
+    </header>
+     <nav class="main-nav">
+      <ul>
+        <!-- TODO: Use one of the icons from the available set for each of these nav items... -->
+        <li class="tab" data-content="articles"><a href="#"><i class="material-icons"></i> Home</a></li>
+        <li class="tab" data-content="about"><a href="#"><i class="material-icons"></i> About</a></li>
+      </ul>
+    </nav>
     <div id="middle">
             <article id="section1" class="feature-frame">
                 <section id="past">
@@ -30,7 +39,6 @@
                 </section>
             </article>
     </div>
-    
-    <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
   </body>
 </html>
