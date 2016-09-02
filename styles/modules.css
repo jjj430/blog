@@ -56,11 +56,9 @@
   text-decoration: none;
 }
 
-/* TODO: Now add styles for how things should look on a larger screen:
-         - Hide the hamburger.
-         - Main should be all on one row, with padding spaced better for a larger screen.
-         - Just, ya know, try to make it look good! */
-/* @media only screen... */
+/* Hide the hamburger, when screen is large (desktop),
+  Main nav is on one row, with padding spaced better for a larger screen.   */
+/* for all screens with a minimum width of 400px or bigger */
 @media all and (min-width: 400px){
   .icon-menu {
     display: none;
@@ -72,7 +70,7 @@
 
   .main-nav ul li {
     display: inline-block;
-    padding:50px;
+    padding:60px;
   }
 
 }
