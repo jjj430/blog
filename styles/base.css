@@ -9,6 +9,16 @@ body {
   color: #313131;
 }
 
+header {
+  background-color: lightblue;
+  font-size: 100%;
+  }
+
+  header-h1 {
+  background-color: lightgreen;
+  font-size: 100%;
+  }
+
 hr {
   margin: 1em;
   width: 80%;
@@ -24,17 +34,4 @@ address {
   display: inline-block;
 }
 
-/*LINK STYLES
-=======================================*/
 
-a, a:link, a:active {
-  text-decoration: none;
-  color: #777;
-}
-
-a:hover, a:focus {
-  color: #29506D;
-}
-
-a:visited {
-}
