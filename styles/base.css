@@ -14,14 +14,13 @@ header {
   font-size: 100%;
   }
 
-  header-h1 {
-  background-color: lightgreen;
-  font-size: 100%;
-  }
-
 hr {
   margin: 1em;
   width: 80%;
+}
+
+#about {
+  background-color: lightgreen;
 }
 
 /*TEXT STYLES
