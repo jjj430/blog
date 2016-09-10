@@ -6,11 +6,13 @@ img {
 body {
   line-height: 1.5;
   font-size: 100%;
+  background-image: url("pic/carpet.png");
   color: #313131;
 }
 
 header {
-  background-color: lightblue;
+  background-color: red;
+  
   font-size: 100%;
   }
 
