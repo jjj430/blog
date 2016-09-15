@@ -21,7 +21,7 @@
 }
 
 .main-nav ul {
-  display: none;
+  /*display: none;*/
   padding: 0;
   list-style: none;
   clear: both;
@@ -43,10 +43,6 @@
   list-style: none;
 }
 
-.template {
-  display: none;
-}
-
 .byline {
   color: #777;
 }
@@ -55,6 +51,12 @@
   font-weight: bold;
   text-decoration: none;
 }
+
+article, #projects {
+  display: block;
+}
+
+
 
 /* Hide the hamburger, when screen is large (desktop),
   Main nav is on one row, with padding spaced better for a larger screen.   */

@@ -2,28 +2,22 @@ var projects = [];
 
 function Project (opts) {
   this.title = opts.title;
-  this.authorUrl = opts.authorUrl;
-  this.category = opts.category;
-  this.body = opts.body;
+  this.description = opts.description;
+  this.linkLive = opts.linkLive;
+  this.linkGithub = opts.linkGithub;
+  this.dateComplete = opts.dateComplete;
 }
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('project.template').clone();
-  $newProject.removeClass('template');
-  
-  $newProject.attr('data-category', this.category);
-
-  $newProject.find('.byline a').attr('href', this.authorUrl);
-  $newProject.find('h1:first').html(this.title);
-  $newProject.find('.article-body').html(this.body);
-  $newProject.append('<hr>');
-  return $newProject;
+  var appTemplate = $("#template").html();
+  var compileTemplate = Handlebars.compile(appTemplate);
+  return compileTemplate(this);
 }
 
-rawData.forEach(function(ele) {
+rawData.forEach(function(ele) {  //creates a new object for each element of data
   projects.push(new Project(ele));
 })
 
 projects.forEach(function(a){
-  $('#articles').append(a.toHtml())
+  $('#projects').append(a.toHtml())
 });

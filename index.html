@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
+    <script id="template" type="text/x-handlebars-template">
+      <article   data-category="cat">
+          <h2>{{title}}</h2>
+          <p>{{description}}</p>
+          <a href="{{linkGithub}}">Project on GitHub</a>
+        </article>
+    </script>    
   </head>
   <body>
     <header class="site-header">
@@ -14,13 +21,13 @@
         <h1>
           Rosemary's BLOG
         </h1>
-        <img src="pic/carpet.png" alt="carpet" style="width:304px;height:228px;">
+       <!-- <img src="pic/carpet.png" alt="carpet" style="width:304px;height:228px;"> -->
         <h2>What's happening:</h2>
       </section>
       <nav class="main-nav">
         <i class="icon-menu"></i>
         <ul>
-          <li class="tab" data-content="blog"><a href="#" class="icon-home"> Home</a></li>
+          <li class="tab" data-content="projects"><a href="#" class="icon-home"> Home</a></li>
           <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
           <li><a href="http://twitter.com/jjj430" target="_blank" class="icon-twitter3"> Twitter</a></li>
           <li><a href="http://github.com/jjj430" target="_blank" class="icon-github"> GitHub</a></li>
@@ -28,17 +35,8 @@
       </nav>
     </header>
     <main>
-      <section id="blog" class="tab-content">
-        <div>
-          
-        </div>
-        <article class="template" data-category="cat">
-          <header>
-            <h1>Projects</h1>
-            
-          </header>
-          <section class="article-body"></section>
-        </article>
+      <section id="projects" class="tab-content">
+        
       </section>
       <section id="about" class="tab-content">
         <header>
@@ -57,9 +55,10 @@
     <footer>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="scripts/blogProjects.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="scripts/projectData.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/project.js"></script>
-    <script src="scripts/projectView.js"></script>
+ <!--   <script src="scripts/projectView.js"></script>  -->
   </body>
 </html>
