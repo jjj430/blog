@@ -10,7 +10,7 @@
 
 /*  Add styles for the icon-menu class. It should be bigger, and off to the right. */
 .icon-menu {
-  font-size: 40px;
+  font-size: 20px;
   position: absolute;
   right: 0;
   top: 0;
@@ -54,6 +54,9 @@
 
 article, #projects {
   display: block;
+  border-style: solid;
+  border-width: 1px;
+  background-color: lightblue;
 }
 
 

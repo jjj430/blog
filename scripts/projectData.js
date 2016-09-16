@@ -7,14 +7,14 @@ var rawData = [
     dateComplete: 'July 2, 2016'
   },
   {
-    title: '',
+    title: 'Salmon Cookie Stand',
     description: '',
     linkLive: '',
     linkGithub: '',
     dateComplete: ''
   },
   {
-    title: '',
+    title: 'Bus Mall',
     description: '',
     linkLive: '',
     linkGithub: '',
