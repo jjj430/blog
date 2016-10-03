@@ -1,9 +1,9 @@
 (function(module) {
-    var aboutContoller = { };
+    var aboutController = {};
 
     aboutController.index = function() {
         $('#projects').hide();
         $('#about').show();
     };
-    module.aboutContoller = aboutContoller;
+    module.aboutController = aboutController;
 }) (window);

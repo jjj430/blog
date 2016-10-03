@@ -1,10 +1,10 @@
 (function(module) {
-    var projectsContoller = { };
+    var projectController = { };
 
-    projecdtsController.index = function() {
+    projectController.index = function() {
         Project.fetchAll(projectView.initIndexPage);
         $('#about').hide();
         $('#projects').show();
     };
-    module.aboutContoller = aboutContoller;
+    module.projectController = projectController;
 }) (window);
