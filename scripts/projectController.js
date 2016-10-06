@@ -1,5 +1,7 @@
 (function(module) {
-    var projectController = { };
+    var projectController = {};
+    
+    Project.createTable();
 
     projectController.index = function() {
         Project.fetchAll(projectView.initIndexPage);
